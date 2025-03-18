@@ -19,9 +19,10 @@ const campoObrigatorio = document.querySelectorAll('.campo-obrigatorio');
         inputText.forEach((input, index) => {
             if (input.value === ""){
                 input.classList.add('obrigatorio');
-                campoObrigatorio[index].classList.add('visivel');   
+                campoObrigatorio[index].classList.add('visivel');  
+                envio.preventDefault();
             }
-            envio.preventDefault();
+            
         });
     });
     
